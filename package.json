@@ -1,0 +1,20 @@
+{
+  "name": "gitterish",
+  "version": "1.0.0",
+  "description": "Git for the future.",
+  "main": "index.js",
+  "bin": "./index.js",
+  "keywords": [
+    "gitter",
+    "git tooling",
+    "github",
+    "git",
+    "version",
+    "control"
+  ],
+  "author": "Mahir Molai",
+  "license": "MIT",
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+}
