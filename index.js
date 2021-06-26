@@ -16,7 +16,7 @@ if(args[0] === "link" && args[1]) {
 }
 
 if(args[0] === "push") {
-    exec("git push", () => console.log("Pushed to the remote origin!"));
+    exec("git push -u origin main", () => console.log("Pushed to the remote origin!"));
 }
 
 if(args[0] === "pull") {
