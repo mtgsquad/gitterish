@@ -10,7 +10,7 @@ if(args[0] === "init") {
 }
 
 if(args[0] === "link" && args[1]) {
-    if(args[1].startsWith() !== "https://") return console.log("That's not a URL for a github repository");
+    if(!args[1]) return console.log("That's not a URL for a github repository");
 
     exec(`git remote add origin ${args[1]}`, () => console.log(`Successfully added the remote origin: ${args[1]}`));
 }
