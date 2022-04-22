@@ -26,8 +26,8 @@ if(args[0] === "pull") {
 }
 
 if(args[0] === "clone" && args[1]) {
-    if(args[3]) {
-        exec(`git clone ${args[1]} ${args[3]}`, () => console.log("Cloned the repository into the given directory!"));
+    if(args[2]) {
+        exec(`git clone ${args[1]} ${args[2]}`, () => console.log("Cloned the repository into the given directory!"));
     } else {
         exec(`git clone ${args[1]} .`, () => console.log(`Cloned the repository into the current working directory!`));
     }
